@@ -15,6 +15,5 @@ define('FITTEXT_PLUGIN_URL', plugin_dir_url(  __FILE__  ) );
 
 add_action('wp_enqueue_scripts', 'fittext');
 function fittext() {
-	wp_enqueue_script('fitvids', FITTEXT_PLUGIN_URL . 'jquery.fittext.js', array('jquery'), '1.0');
-	wp_enqueue_script('fitvids.init', FITTEXT_PLUGIN_URL . 'jquery.fittext.init.js', array('jquery', 'fitvids'), '1.0');
+	wp_enqueue_script('fitext', FITTEXT_PLUGIN_URL . 'jquery.fittext.js', array('jquery'), '1.0');
 } ?>
